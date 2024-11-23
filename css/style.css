@@ -6,8 +6,10 @@
     width: 1px;
     height: 1px;
     overflow: hidden;
-    background-color: #67A738;
+    background-color: #285806;
+    color: white;
     padding: 10px;
+    text-decoration: none;
 }
 
 .skip:focus {
@@ -105,10 +107,10 @@ header nav {
 }
 
 nav a {
-    color: #344D42;
     text-decoration: none;
     position: relative;
     padding: 5px 10px;
+    color: #344D42;
 }
 
 li {
@@ -208,9 +210,9 @@ hr {
 
 .color1 {
     border: none;
-    padding: 5px 10px;
+    padding: 7px 19px;
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     cursor: pointer;
     background-color: #F4E2DF;
     color: #344D42;
@@ -218,16 +220,16 @@ hr {
     transition: all 0.3s ease;
 }
 
-.color1:active {
+.color1.active {
     transform: translateY(2px);
     box-shadow: none;
 }
 
 .color2 {
     border: none;
-    padding: 5px 10px;
+    padding: 7px 19px;
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     cursor: pointer;
     background-color: #FFE498;
     color: #344D42;
@@ -235,7 +237,7 @@ hr {
     box-shadow: 2px 4px #FFD86B;
 }
 
-.color2:active {
+.color2.active {
     transform: translateY(2px);
     box-shadow: none;
 
@@ -243,9 +245,9 @@ hr {
 
 .color3 {
     border: none;
-    padding: 5px 10px;
+    padding: 7px 19px;
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     cursor: pointer;
     background-color: #FED04D;
     color: #344D42;
@@ -253,16 +255,16 @@ hr {
     box-shadow: 2px 4px #FFBD00;
 }
 
-.color3:active {
+.color3.active {
     transform: translateY(2px);
     box-shadow: none;
 }
 
 .color4 {
     border: none;
-    padding: 5px 10px;
+    padding: 7px 19px;
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     cursor: pointer;
     background-color: #D5F295;
     color: #344D42;
@@ -270,16 +272,16 @@ hr {
     box-shadow: 2px 4px #B7D576;
 }
 
-.color4:active {
+.color4.active {
     transform: translateY(2px);
     box-shadow: none;
 }
 
 .color5 {
     border: none;
-    padding: 5px 10px;
+    padding: 7px 19px;
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     cursor: pointer;
     background-color: #FFA1E1;
     color: #344D42;
@@ -287,16 +289,16 @@ hr {
     box-shadow: 2px 4px #F97FD2;
 }
 
-.color5:active {
+.color5.active {
     transform: translateY(2px);
     box-shadow: none;
 }
 
 .color6 {
     border: none;
-    padding: 5px 10px;
+    padding: 7px 19px;
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     cursor: pointer;
     background-color: #D7C9FF;
     color: #344D42;
@@ -304,16 +306,16 @@ hr {
     box-shadow: 2px 4px #9974FF;
 }
 
-.color6:active {
+.color6.active {
     transform: translateY(2px);
     box-shadow: none;
 }
 
 .color7 {
     border: none;
-    padding: 5px 10px;
+    padding: 7px 19px;
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     cursor: pointer;
     background-color: #FFFEF3;
     color: #344D42;
@@ -321,16 +323,16 @@ hr {
     box-shadow: 2px 4px #EDE9C3;
 }
 
-.color7:active {
+.color7.active {
     transform: translateY(2px);
     box-shadow: none;
 }
 
 .color8 {
     border: none;
-    padding: 5px 10px;
+    padding: 7px 19px;
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     cursor: pointer;
     background-color: #D9BE8E;
     color: #344D42;
@@ -338,7 +340,7 @@ hr {
     box-shadow: 2px 4px #B99C68;
 }
 
-.color8:active {
+.color8.active {
     transform: translateY(2px);
     box-shadow: none;
 }
@@ -349,9 +351,9 @@ hr {
 
 .color9 {
     border: none;
-    padding: 5px 10px;
+    padding: 7px 19px;
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     cursor: pointer;
     background-color: #e3caab;
     color: #344D42;
@@ -359,16 +361,16 @@ hr {
     box-shadow: 2px 4px #bf9674;
 }
 
-.color9:active {
+.color9.active {
     transform: translateY(2px);
     box-shadow: none;
 }
 
 .color10 {
     border: none;
-    padding: 5px 10px;
+    padding: 7px 19px;
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     cursor: pointer;
     background-color: #88CA57;
     color: #344D42;
@@ -376,16 +378,16 @@ hr {
     box-shadow: 2px 4px #5D9930;
 }
 
-.color10:active {
+.color10.active {
     transform: translateY(2px);
     box-shadow: none;
 }
 
 .color11 {
     border: none;
-    padding: 5px 10px;
+    padding: 7px 19px;
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     cursor: pointer;
     background-color: #edc3a6;
     color: #344D42;
@@ -393,16 +395,16 @@ hr {
     box-shadow: 2px 4px #473134;
 }
 
-.color11:active {
+.color11.active {
     transform: translateY(2px);
     box-shadow: none;
 }
 
 .color12 {
     border: none;
-    padding: 5px 10px;
+    padding: 7px 19px;
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     cursor: pointer;
     background-color: #FBC195;
     color: #344D42;
@@ -410,16 +412,16 @@ hr {
     box-shadow: 2px 4px #FBA35F;
 }
 
-.color12:active {
+.color12.active {
     transform: translateY(2px);
     box-shadow: none;
 }
 
 .color13 {
     border: none;
-    padding: 5px 10px;
+    padding: 7px 19px;
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     cursor: pointer;
     background-color: #fab5c0;
     color: #344D42;
@@ -427,16 +429,16 @@ hr {
     box-shadow: 2px 4px #90AC4A;
 }
 
-.color13:active {
+.color13.active {
     transform: translateY(2px);
     box-shadow: none;
 }
 
 .color14 {
     border: none;
-    padding: 5px 10px;
+    padding: 7px 19px;
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     cursor: pointer;
     background-color: #ffdab9;
     color: #344D42;
@@ -444,16 +446,16 @@ hr {
     box-shadow: 2px 4px #ffa500;
 }
 
-.color14:active {
+.color14.active {
     transform: translateY(2px);
     box-shadow: none;
 }
 
 .color15 {
     border: none;
-    padding: 5px 10px;
+    padding: 7px 19px;
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     cursor: pointer;
     background-color: #f9ca96;
     color: #344D42;
@@ -461,25 +463,28 @@ hr {
     box-shadow: 2px 4px #cf5704;
 }
 
-.color15:active {
+.color15.active {
     transform: translateY(2px);
     box-shadow: none;
 }
-.reset{
+
+.reset {
     border: none;
-    padding: 5px 10px;
+    padding: 7px 19px;
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     cursor: pointer;
     background-color: #bded9c;
     color: #344D42;
     transition: all 0.3s ease;
     box-shadow: 2px 4px #344D42;
 }
-.reset:active {
+
+.reset.active {
     transform: translateY(2px);
     box-shadow: none;
 }
+
 
 
 

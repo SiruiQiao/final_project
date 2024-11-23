@@ -47,3 +47,19 @@ function changeBackgroundColor(color) {
 }
 
 
+// 获取所有按钮
+const buttons = document.querySelectorAll('.filter');
+
+// 遍历每个按钮，绑定点击事件
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        // 移除其他按钮的 active 状态
+        buttons.forEach(btn => btn.classList.remove('active'));
+
+        // 为当前点击的按钮添加 active 状态
+        button.classList.add('active');
+
+        // 动态改变页面背景颜色（根据 data-color 属性）
+        document.body.style.backgroundColor = button.dataset.color;
+    });
+});
