@@ -29,7 +29,7 @@
     </header>
 
     <main id="main">
-        <p class="h2">Click on the buttons below to filter the smoothies by their main ingredients.</p>
+        <h2>Click on the buttons below to filter the smoothies by their main ingredients</h2>
 
         <div class="filter-buttons">
             <button class="filter color1" data-fruit="Strawberry" data-color="#FFF3F1">Strawberry</button>
@@ -52,6 +52,19 @@
 
 
         <section class="container">
+            <!-- pop up box design -->
+            <div class="modal hidden">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <img id="modal-image" src="" alt="Image of the selected smoothie">
+                    <h3 id="modal-title" aria-hidden="true">Smoothie Title Will Appear Here</h3>
+                    <hr>
+                    <h4>Ingredients:</h4>
+                    <ul id="modal-ingredients"></ul>
+                </div>
+            </div>
+
+
             <div class="smoothie-card" data-fruits="Strawberry,Banana">
                 <img src="images/Strawberry.jpeg" alt="Strawberry-Banana Smoothie">
                 <h3>Strawberry-Banana Smoothie</h3>
@@ -65,18 +78,6 @@
                     <li>2 teaspoons honey</li>
                     <li>Pinch of ground cinnamon</li>
                 </ul>
-            </div>
-
-            <!-- pop up design -->
-            <div class="modal hidden">
-                <div class="modal-content">
-                    <span class="close-btn">&times;</span>
-                    <img id="modal-image" src="" alt="Smoothie Image">
-                    <h3 id="modal-title"></h3>
-                    <hr>
-                    <h4>Ingredients:</h4>
-                    <ul id="modal-ingredients"></ul>
-                </div>
             </div>
 
             <div class="smoothie-card" data-fruits="Oatmeal">
