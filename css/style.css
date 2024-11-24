@@ -63,6 +63,15 @@ h2 {
     margin: 20px;
     text-align: center;
 }
+.h2{
+    font-family: "lato", serif;
+    font-weight: 500;
+    font-style: normal;
+    /* font-size: 1.1rem; */
+    color: #344D42;
+    margin: 20px;
+    text-align: center;
+}
 
 h3 {
     font-family: "lato", serif;
