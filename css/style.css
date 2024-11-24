@@ -18,6 +18,10 @@
     height: auto;
 }
 
+.modal{
+    visibility: hidden;
+}
+
 body {
     background-color: #F8F7F1;
 }
@@ -123,29 +127,26 @@ nav a::after {
     left: 0;
     bottom: 0;
     height: 2px;
-    /* 下划线的高度 */
     width: 0;
     background-color: #4caf50;
-    /* 下划线颜色 */
     transition: width 0.3s ease-in-out;
-    /* 动画效果 */
+    color: #344D42;
 }
 
 nav a:hover::after {
     width: 100%;
-    /* 悬停时下划线展开 */
+    color: #344D42;
 }
 
 nav a.active::after {
     width: 100%;
-    /* 选中时保持下划线 */
     background-color: #4caf50;
-    /* 下划线颜色为绿色 */
+    color: #344D42;
 }
 
 /* Smoothie Card style*/
 hr {
-    /* all: unset; */
+    border: none;
     border-top: 1.3px dashed #344D42;
     width: 200px;
     margin: 0 auto;
@@ -163,7 +164,7 @@ hr {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* 鼠标悬停时增加放大效果 */
+
 .smoothie-card:hover {
     transform: translateY(-10px);
     /* 向上浮动 */
@@ -171,7 +172,6 @@ hr {
     /* 加强阴影 */
 }
 
-/* 图片样式 */
 .smoothie-card img {
     width: 100%;
     /* 图片宽度填满卡片 */
@@ -183,7 +183,6 @@ hr {
     /* 图片和内容之间的分割线 */
 }
 
-/* 列表样式 */
 .smoothie-card ul {
     /* list-style: inside; */
     font-size: 0.9rem;
@@ -205,7 +204,7 @@ hr {
     /* justify-content: space-between; */
     gap: 10px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .color1 {
@@ -485,36 +484,243 @@ hr {
     box-shadow: none;
 }
 
+/* form design */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 卡片间距和布局 */
-/* .smoothie-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; 
-    justify-content: center; 
+.recipe-form-container {
+    border: 1px solid #344D42;
+    max-width: 600px;
+    margin: 0 auto;
     padding: 20px;
-    background-color: #f5f5f5;
-} */
+    background-color: #E8F1D3;
+    border-radius: 12px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    font: 1rem "Lato", serif;
+    margin-bottom: 30px;
+}
 
+.recipe-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #344D42;
+}
 
+/* 表单字段样式 */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
+label {
+    font-size: 1rem;
+    color: #344D42;
+}
 
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #344D42;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #F8F7F1;
+    ;
+    color: #344D42;
+}
 
+input:focus,
+textarea:focus {
+    border-color: #344D42;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 77, 66, 0.5);
+}
 
-@media only screen and (min-width: 768px) {}
+.submit-btn {
+    background-color: #344D42;
+    color: #F8F7F1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #577C69;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:active {
+    transform: translateY(2px);
+}
+
+.appleicon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+#successMessage {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* for table size */
+@media only screen and (min-width: 600px) {
+    header nav {
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .modal{
+        visibility: hidden;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .filter-buttons {
+        justify-content: center;
+        margin-bottom: 0px;
+        margin-top: 40px;
+    }
+}
+
+/* for desktop size */
+@media only screen and (min-width: 800px) {
+    header nav {
+        justify-content: center;
+        gap: 100px;
+    }
+
+    main {
+        margin-top: 50px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .smoothie-card {
+        width: 350px;
+    }
+
+    .smoothie-card img {
+        height: 250px;
+    }
+
+    #successMessage {
+        max-width: 600px;
+        margin: auto auto 80px auto;
+    }
+
+    .filter-buttons {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .filter {
+        padding: 10px 20px;
+    }
+
+    .smoothie-card ul {
+        /* list-style: inside; */
+        font-size: 1.1rem;
+        text-align: left;
+        padding-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    /* 模态框样式 */
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        /* 背景虚化 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    /* 模态框激活状态 */
+    .modal.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* 模态框内容样式 */
+    .modal-content {
+        background: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        width: 90%;
+        max-width: 500px;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        position: relative;
+    }
+
+    .modal-content img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+
+    .modal-content h3 {
+        font-size: 1.5rem;
+        margin: 10px 0;
+    }
+
+    .modal-content ul {
+        text-align: left;
+        margin: 10px 0;
+        padding-left: 20px;
+    }
+
+    .modal-content .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 1.5rem;
+        color: #333;
+        cursor: pointer;
+        transition: color 0.3s;
+    }
+
+    .modal-content .close-btn:hover {
+        color: #f00;
+    }
+
+}

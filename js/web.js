@@ -63,3 +63,80 @@ buttons.forEach(button => {
         document.body.style.backgroundColor = button.dataset.color;
     });
 });
+
+// 获取表单和消息元素
+const form = document.getElementById('recipeForm');
+const successMessage = document.getElementById('successMessage');
+
+// 监听表单提交事件
+if (form && successMessage) {
+    form.addEventListener('submit', (event) => {
+        event.preventDefault(); // 阻止默认提交行为
+
+        // 显示成功消息
+        successMessage.classList.remove('hidden');
+
+        // 清空表单
+        form.reset();
+
+        // 隐藏消息（可选，延迟几秒后隐藏）
+        // setTimeout(() => {
+        //     successMessage.classList.add('hidden');
+        // }, 5000); // 5秒后隐藏
+    });
+}
+
+
+
+// 获取模态框和相关元素
+const modal = document.querySelector('.modal');
+const modalImage = document.getElementById('modal-image');
+const modalTitle = document.getElementById('modal-title');
+const modalIngredients = document.getElementById('modal-ingredients');
+const closeButton = document.querySelector('.close-btn');
+
+// 函数：显示模态框
+function showModal(card) {
+    const imageSrc = card.querySelector('img').src;
+    const title = card.querySelector('h3').textContent;
+    const ingredientsList = card.querySelectorAll('ul li');
+
+    // 填充模态框内容
+    modalImage.src = imageSrc;
+    modalTitle.textContent = title;
+    modalIngredients.innerHTML = ''; // 清空现有内容
+    ingredientsList.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item.textContent;
+        modalIngredients.appendChild(li);
+    });
+
+    // 显示模态框
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden'; // 禁用背景滚动
+}
+
+// 函数：关闭模态框
+function closeModal() {
+    modal.classList.remove('active');
+    document.body.style.overflow = 'auto'; // 恢复背景滚动
+}
+
+// 为每个卡片添加点击事件，仅在宽度大于 800px 时启用
+smoothieCards.forEach(card => {
+    card.addEventListener('click', () => {
+        if (window.innerWidth >= 800) {
+            showModal(card);
+        }
+    });
+});
+
+// 关闭模态框
+closeButton.addEventListener('click', closeModal);
+
+// 点击模态框背景关闭
+modal.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        closeModal();
+    }
+});

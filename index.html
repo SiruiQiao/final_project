@@ -19,7 +19,7 @@
 <body>
     <a href="#main" class="skip">Skip to Main Content</a>
     <header>
-        <img src="images/smoothie (1).png" alt="Smoothie Logo">
+        <img src="images/smoothie_icon.png" alt="Smoothie Logo">
         <h1>Smoothie World</h1>
         <nav>
             <a href="index.html" class="active">Home</a>
@@ -30,7 +30,22 @@
     <main id="main">
 
         <!-- referenece:https://www.foodnetwork.com/recipes/photos/smoothie-recipes -->
-        <h2>Popular Smoothie Recipes</h2>
+        <h2>Here are some popular smoothie recipes that you can try at home.</h2>
+        <h2>Enjoy!</h2>
+
+
+        <!-- 模态框 -->
+        <div class="modal hidden">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <img id="modal-image" src="" alt="Smoothie Image">
+                <h3 id="modal-title"></h3>
+                <hr>
+                <h4>Ingredients:</h4>
+                <ul id="modal-ingredients"></ul>
+            </div>
+        </div>
+
         <section class="container">
             <div class="smoothie-card">
                 <img src="images/Strawberry.jpeg" alt="Strawberry-Banana Smoothie">
@@ -52,7 +67,7 @@
                 <h3>Tropical Oatmeal Smoothie</h3>
                 <hr>
                 <h4>Ingredients:</h4>
-                
+
                 <ul>
                     <li>1/2 cup old-fashioned rolled oats</li>
                     <li>1 small banana, peeled and broken into 4 pieces</li>
@@ -71,7 +86,7 @@
                 <h3>Cherry-Almond Smoothie</h3>
                 <hr>
                 <h4>Ingredients:</h4>
-                
+
                 <ul>
                     <li>1 banana, sliced</li>
                     <li>2 cups frozen pitted cherries</li>
@@ -86,7 +101,7 @@
                 <h3>Ultra-Creamy Avocado Smoothie</h3>
                 <hr>
                 <h4>Ingredients:</h4>
-                
+
                 <ul>
                     <li>1 cup milk</li>
                     <li>1/2 cup sweetened condensed milk, plus more to taste</li>
@@ -100,7 +115,7 @@
                 <h3>Mixed Berries and Banana Smoothie</h3>
                 <hr>
                 <h4>Ingredients:</h4>
-            
+
                 <ul>
                     <li>1 cup frozen mixed berries</li>
                     <li>1 frozen ripe banana</li>
@@ -115,7 +130,7 @@
                 <h3>Mango, Strawberry, and Pineapple Smoothie</h3>
                 <hr>
                 <h4>Ingredients:</h4>
-                
+
                 <ul>
                     <li>1 mango, skin removed, cut into 1-inch dice, frozen</li>
                     <li>5 strawberries, stems removed, cut half, frozen</li>
@@ -129,7 +144,7 @@
                 <h3>Strawberry-Green Tea Smoothie</h3>
                 <hr>
                 <h4>Ingredients:</h4>
-                
+
                 <ul>
                     <li>1 green tea bag</li>
                     <li>3/4 cup very hot water</li>
@@ -146,7 +161,7 @@
                 <h3>Blueberry-Almond Smoothie</h3>
                 <hr>
                 <h4>Ingredients:</h4>
-                
+
                 <ul>
                     <li>1 cup blueberries, plus more for garnish</li>
                     <li>2 tablespoons roasted, salted almonds</li>
@@ -161,7 +176,7 @@
                 <h3>Vietnamese Coffee Smoothie</h3>
                 <hr>
                 <h4>Ingredients:</h4>
-                
+
                 <ul>
                     <li>1/2 cup chilled espresso</li>
                     <li>1/4 cup sweetened condensed milk</li>
@@ -174,7 +189,7 @@
                 <h3>Peanut Butter Split Smoothie</h3>
                 <hr>
                 <h4>Ingredients:</h4>
-                
+
                 <ul>
                     <li>1 ripe banana, quartered and frozen</li>
                     <li>1/2 cup nonfat milk</li>
@@ -188,7 +203,7 @@
                 <h3>Green Smoothie</h3>
                 <hr>
                 <h4>Ingredients:</h4>
-                
+
                 <ul>
                     <li>1 cup chopped fresh pineapple, plus a pineapple wedge for garnish</li>
                     <li>1 cup packed chopped kale (stems removed)</li>
@@ -204,7 +219,7 @@
                 <h3>Blueberry and Chia Seed Smoothie</h3>
                 <hr>
                 <h4>Ingredients:</h4>
-                
+
                 <ul>
                     <li>2 tablespoons chia seeds</li>
                     <li>1 1/2 cups almond milk</li>
@@ -219,7 +234,7 @@
             <div class="smoothie-card">
                 <img src="images/Coconut.jpeg" alt="Vanilla Bean Coconut Yogurt Smoothie">
                 <h3>Vanilla Bean Coconut Yogurt Smoothiex</h3>
-                
+
                 <hr>
                 <h4>Ingredients:</h4>
                 <ul>

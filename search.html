@@ -19,7 +19,7 @@
 <body>
     <a href="#main" class="skip">Skip to Main Content</a>
     <header>
-        <img src="images/smoothie (1).png" alt="Smoothie Logo">
+        <img src="images/smoothie_icon.png" alt="Smoothie Logo">
         <h1>Smoothie World</h1>
         <nav>
             <a href="index.html">Home</a>
@@ -29,6 +29,8 @@
     </header>
 
     <main id="main">
+        <h2>Click on the buttons below to filter the smoothies by their main ingredients.</h2>
+
         <div class="filter-buttons">
             <button class="filter color1" data-fruit="Strawberry" data-color="#FFF3F1">Strawberry</button>
             <button class="filter color2" data-fruit="Banana" data-color="#FFF6DD">Banana</button>
@@ -64,6 +66,18 @@
                     <li>Pinch of ground cinnamon</li>
                 </ul>
             </div>
+
+                    <!-- 模态框 -->
+        <div class="modal hidden">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <img id="modal-image" src="" alt="Smoothie Image">
+                <h3 id="modal-title"></h3>
+                <hr>
+                <h4>Ingredients:</h4>
+                <ul id="modal-ingredients"></ul>
+            </div>
+        </div>
 
             <div class="smoothie-card" data-fruits="Oatmeal">
                 <img src="images/Tropical.jpeg" alt="Tropical Oatmeal Smoothie">

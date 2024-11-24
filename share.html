@@ -19,7 +19,7 @@
 <body>
     <a href="#main" class="skip">Skip to Main Content</a>
     <header>
-        <img src="images/smoothie (1).png" alt="Smoothie Logo">
+        <img src="images/smoothie_icon.png" alt="Smoothie Logo">
         <h1>Smoothie World</h1>
         <nav>
             <a href="index.html">Home</a>
@@ -29,6 +29,28 @@
     </header>
 
     <main id="main">
+        <h2>Share Your Favorite Recipe</h2>
+
+        <div class="recipe-form-container">
+            <img src="images/fruit.png" alt="fruit icon" class="appleicon">
+            <h2>Share Your Favorite Recipe</h2>
+            <form id="recipeForm" action="https://formspree.io/f/xeoqagln" method="POST">
+                <label for="recipe-name">Recipe Name:</label>
+                <input type="text" id="recipe-name" name="recipe-name" placeholder="Enter your recipe name" required>
+
+                <label for="main-ingredients">Main Ingredients:</label>
+                <textarea id="main-ingredients" name="main-ingredients" placeholder="List the main ingredients..." required></textarea>
+        
+                <label for="contact">Your Contact (optional):</label>
+                <input type="email" id="contact" name="contact" placeholder="Enter your email (optional)">
+        
+                <button type="submit" class="submit-btn">Submit Recipe</button>
+            </form>
+        </div>
+        <div id="successMessage" class="hidden">
+            Thank you for sharing your recipe!
+        </div>
+        
 
     </main>
 
