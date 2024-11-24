@@ -115,10 +115,14 @@ smoothieCards.forEach(card => {
     });
 });
 
-closeButton.addEventListener('click', closeModal);
+if (closeButton) {
+    closeButton.addEventListener('click', closeModal);
+}
 
-modal.addEventListener('click', (event) => {
-    if (event.target === modal) {
-        closeModal();
-    }
-});
+if (modal) {
+    modal.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
+}
