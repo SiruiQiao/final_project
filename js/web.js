@@ -75,6 +75,8 @@ if (form && successMessage) {
 
 
 // pop up card 
+// reference:https://www.w3schools.com/howto/howto_css_modals.asp
+
 const modal = document.querySelector('.modal');
 const modalImage = document.getElementById('modal-image');
 const modalTitle = document.getElementById('modal-title');
